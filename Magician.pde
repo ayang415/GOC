@@ -17,8 +17,8 @@ class Magician extends Sprite {
         
 
         if(millis() - mark > wait) {
-            float randx = random(1024);
-            float randy = random(768);
+            float randx = random(width);
+            float randy = random(height);
             pos.x = randx;
             pos.y = randy;
             

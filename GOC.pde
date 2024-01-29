@@ -1,7 +1,8 @@
 SpriteManager _SM;
 
 void setup() {
-    size(1024, 768);
+    //size(1024, 768);
+    fullScreen();
     _SM = new SpriteManager();
     _SM.spawn(new Magician(50, 50));
     _SM.spawn(new Archer(236, 30, 100));

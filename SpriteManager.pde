@@ -62,7 +62,7 @@ class SpriteManager {
         float w2 = b.size.x / 2.0;
         float h1 = a.size.y / 2.0;
         float h2 = b.size.y / 2.0;
-        if(w1 + w2 > dist(a.pos.x, a.pos.y, b.pos.x, b.pos.y) || h1 + h2 > dist(a.pos.x, a.pos.y, b.pos.x, b.pos.y)) {
+        if(w1 + w2 >= a.pos.x + b.pos.x || h1 + h2 >= a.pos.y + b.pos.y) {
           return true;
         }
         return false;

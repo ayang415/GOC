@@ -38,10 +38,10 @@ class Player extends Sprite {
     @Override
     void handleCollision() {
         // don't die.
-        health -= 1;
-        if(health == 0) {
-          _SM.destroy(this);
-        }
+        //health -= 1;
+        //if(health == 0) {
+          //_SM.destroy(this);
+        //}
     }
 
     void keyUp() {
